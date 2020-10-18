@@ -1,0 +1,229 @@
+<!--------------------->
+<!-- English Version -->
+<!--------------------->
+<div *ngIf="selectedLang == 'EN'" class="body-inner">
+  <!-- Header start -->
+  <div id="navigation-menu">
+    <nav id="navbar" class="navbar fixed-top navbar-expand-lg navbar-dark clean-navbar">
+      <div class="container">
+        <!-- Logo -->
+        <a class="navbar-brand logo" href="/">MAUROGZ</a>
+        <!-- Links Derecha Start-->
+        <div class="collapse navbar-collapse order-3 order-lg-2" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto">
+
+            <li data-toggle="collapse" data-target=".navbar-collapse.show">
+              <a class="nav-link" href="/">Home</a>
+            </li>
+
+            <li data-toggle="collapse" data-target=".navbar-collapse.show">
+              <a class="nav-link" routerLink="/services">Services</a>
+            </li>
+
+            <li data-toggle="collapse" data-target=".navbar-collapse.show">
+              <a class="nav-link" routerLink="/portfolio">Portfolio</a>
+            </li>
+
+            <li data-toggle="collapse" data-target=".navbar-collapse.show">
+              <a class="nav-link" routerLink="/about">About</a>
+            </li>
+
+            <li data-toggle="collapse" data-target=".navbar-collapse.show">
+              <a class="nav-link" routerLink="/contact">Contact</a>
+            </li>  
+
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <img src="assets/img/lang/{{selectedLang}}.png" alt="Freepik">
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" (click)="changeEs()"><img class="mr-2 align-top" src="assets/img/lang/ES.png" alt="Freepik">Spanish</a>
+                <a class="dropdown-item" (click)="changeEn()"><img class="mr-2 align-top" src="assets/img/lang/EN.png" alt="Freepik">English</a>
+              </div>
+            </li>  
+
+          </ul> 
+        </div>
+        <!-- Links Derecha End-->
+
+        <div class="d-flex flex-row order-2 order-lg-3">
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent">
+              <span class="navbar-toggler-icon"></span>
+          </button>
+        </div>
+
+      </div>
+    </nav>
+
+  </div>
+  <!-- Header end -->
+
+  <!-- Margin -->
+  <div id="top-space"></div>
+  <!-- Margin -->
+
+  <!-- Inicio de contenido de los Componentes -->
+  <router-outlet></router-outlet>
+  <!-- Fin de contenido de los componentes -->
+
+  <!-- Footer Start -->
+  <footer id="footer">
+    <div class="container">
+      <div class="row">
+
+        <div class="col-lg-6 col-md-6 col-sm-12 footer-navigation mt-3">
+          <h4 class="ml-5"><a routerLink="/home">MAUROGZ</a></h4>
+          <p class="links ml-5">
+            <a class="links-item" routerLink="/">Home</a><strong> . </strong>
+            <a class="links-item" routerLink="/services">Services</a><strong> . </strong>
+            <a class="links-item" routerLink="/portfolio">Portfolio</a><strong> . </strong>
+            <a class="links-item" routerLink="/about">About</a><strong> . </strong>
+            <a class="links-item" routerLink="/contact">Contact</a>
+          </p>
+        </div>
+
+
+        <div class="col-lg-6 col-md-6 col-sm-12 footer-about mt-3">
+          
+          <div class="social-links social-icons mr-5">
+            
+            <a href="https://www.facebook.com/pg/mgzargentina" target="_blank"><i class="fa fa-facebook"></i></a>
+            <a href="https://twitter.com/mgzargentina" target="_blank"><i class="fa fa-twitter"></i></a>
+            <a href="https://www.linkedin.com/in/mauro-gomez-4666b295/" target="_blank"><i class="fa fa-linkedin"></i></a>
+            <a href="https://github.com/syldra89" target="_blank"><i class="fa fa-github"></i></a>
+            
+          </div>
+        </div>
+
+      </div>
+
+      <div class="row mt-5 text-center">
+          <div class="col-md-12">
+            <div class="copyright border-top pt-5">
+              <p>
+              Mauro Gomez | Full Stack Developer © 2020
+              </p>
+            </div>
+          </div>
+        </div>
+
+    </div>
+  </footer>
+  <!-- Footer End -->
+
+</div>
+<!------------------------------------------------------------------------------------->
+<!--------------------->
+<!-- English Version -->
+<!--------------------->
+<div *ngIf="selectedLang == 'ES'" class="body-inner">
+  <!-- Header start -->
+  <div id="navigation-menu">
+    <nav id="navbar" class="navbar fixed-top navbar-expand-lg navbar-dark clean-navbar">
+      <div class="container">
+        <!-- Logo -->
+        <a class="navbar-brand logo" href="/">MAUROGZ</a>
+        <!-- Links Derecha Start-->
+        <div class="collapse navbar-collapse order-3 order-lg-2" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto">
+
+            <li data-toggle="collapse" data-target=".navbar-collapse.show">
+              <a class="nav-link" href="/">Inicio</a>
+            </li>
+
+            <li data-toggle="collapse" data-target=".navbar-collapse.show">
+              <a class="nav-link" routerLink="/services">Servicios</a>
+            </li>
+
+            <li data-toggle="collapse" data-target=".navbar-collapse.show">
+              <a class="nav-link" routerLink="/portfolio">Proyectos</a>
+            </li>
+
+            <li data-toggle="collapse" data-target=".navbar-collapse.show">
+              <a class="nav-link" routerLink="/about">Acerca</a>
+            </li>
+
+            <li data-toggle="collapse" data-target=".navbar-collapse.show">
+              <a class="nav-link" routerLink="/contact">Contacto</a>
+            </li>  
+
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <img src="assets/img/lang/{{selectedLang}}.png" alt="Freepik">
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" (click)="changeEs()"><img class="mr-2 align-top" src="assets/img/lang/ES.png" alt="Freepik">Español</a>
+                <a class="dropdown-item" (click)="changeEn()"><img class="mr-2 align-top" src="assets/img/lang/EN.png" alt="Freepik">Inglés</a>
+              </div>
+            </li>  
+
+          </ul> 
+        </div>
+        <!-- Links Derecha End-->
+
+        <div class="d-flex flex-row order-2 order-lg-3">
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent">
+              <span class="navbar-toggler-icon"></span>
+          </button>
+        </div>
+
+      </div>
+    </nav>
+
+  </div>
+  <!-- Header end -->
+
+  <!-- Margin -->
+  <div id="top-space"></div>
+  <!-- Margin -->
+
+  <!-- Inicio de contenido de los Componentes -->
+  <router-outlet></router-outlet>
+  <!-- Fin de contenido de los componentes -->
+
+  <!-- Footer Start -->
+  <footer id="footer">
+    <div class="container">
+      <div class="row">
+
+        <div class="col-lg-6 col-md-6 col-sm-12 footer-navigation mt-3">
+          <h4 class="ml-5"><a routerLink="/home">MAUROGZ</a></h4>
+          <p class="links ml-5">
+            <a class="links-item" routerLink="/">Inicio</a><strong> . </strong>
+            <a class="links-item" routerLink="/services">Servicios</a><strong> . </strong>
+            <a class="links-item" routerLink="/portfolio">Proyectos</a><strong> . </strong>
+            <a class="links-item" routerLink="/about">Acerca</a><strong> . </strong>
+            <a class="links-item" routerLink="/contact">Contacto</a>
+          </p>
+        </div>
+
+
+        <div class="col-lg-6 col-md-6 col-sm-12 footer-about mt-3">
+          
+          <div class="social-links social-icons mr-5">
+            
+            <a href="https://www.facebook.com/pg/mgzargentina" target="_blank"><i class="fa fa-facebook"></i></a>
+            <a href="https://twitter.com/mgzargentina" target="_blank"><i class="fa fa-twitter"></i></a>
+            <a href="https://www.linkedin.com/in/mauro-gomez-4666b295/" target="_blank"><i class="fa fa-linkedin"></i></a>
+            <a href="https://github.com/syldra89" target="_blank"><i class="fa fa-github"></i></a>
+            
+          </div>
+        </div>
+
+      </div>
+
+      <div class="row mt-5 text-center">
+          <div class="col-md-12">
+            <div class="copyright border-top pt-5">
+              <p>
+              Mauro Gomez | Full Stack Developer © 2020
+              </p>
+            </div>
+          </div>
+        </div>
+
+    </div>
+  </footer>
+  <!-- Footer End -->
+
+</div>

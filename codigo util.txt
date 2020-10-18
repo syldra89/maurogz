@@ -1,0 +1,13 @@
+<!-- Social Icons Derecha Start-->
+        <div class="d-flex flex-row order-2 order-lg-3">
+          <ul class="navbar-nav flex-row">
+              <li class="nav-item"><a class="nav-link px-2" target="_blank" href="http://www.facebook.com"><span class="fa fa-facebook"></span></a></li>
+              <li class="nav-item"><a class="nav-link px-2" target="_blank" href="http://www.facebook.com"><span class="fa fa-twitter"></span></a></li>
+              <li class="nav-item"><a class="nav-link px-2" target="_blank" href="http://www.facebook.com"><span class="fa fa-youtube"></span></a></li>
+              <li class="nav-item"><a class="nav-link px-2" target="_blank" href="http://www.facebook.com"><span class="fa fa-linkedin"></span></a></li>
+          </ul>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent">
+              <span class="navbar-toggler-icon"></span>
+          </button>
+        </div>
+        <!-- Social Icons Derecha End-->

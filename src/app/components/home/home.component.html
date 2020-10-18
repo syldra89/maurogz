@@ -1,0 +1,72 @@
+<!-- English Version -->
+<!-- -->
+<!-- Jumbotron start -->
+<section *ngIf=" selectedLang == 'EN' " id="home">
+  <div id="jumbotron">
+    <div id="jumbo-inner" class="jumbotron jumbotron-fluid jumbotron-main text-center">
+      
+        <div class="jumbo-text">
+          <h1>Hey, I'm Mauro!</h1>
+          <br>
+          <p class="text-center">Welcome to my website. I'm a Fullstack developer based in Sweden.
+          </p>
+          <p>
+          If you want to know more about me, click below.
+          </p>
+        
+          <p class="lead">
+            <a id="dark-button" class="btn btn-primary btn-lg" routerLink="/about" role="button">About</a>
+            <a id="dark-button" class="btn btn-primary btn-lg" routerLink="/portfolio" role="button">Portfolio</a>
+          </p>
+        </div>
+
+    </div>
+  </div>
+</section>
+<!-- Jumbotron end -->
+
+<!-- Spanish Version -->
+<!-- -->
+<!-- Jumbotron start -->
+<section *ngIf=" selectedLang == 'ES' " id="home">
+  <div id="jumbotron">
+    <div id="jumbo-inner" class="jumbotron jumbotron-fluid jumbotron-main text-center">
+      
+        <div class="jumbo-text">
+          <h1>Hola, soy Mauro!</h1>
+          <br>
+          <p class="text-center">Bienvenido a mi página. Soy un desarrollador Fullstack basado en Suecia.
+          </p>
+          <p>
+          Si queres saber más acerca de mi, hacé click abajo.
+          </p>
+        
+          <p class="lead">
+            <a id="dark-button" class="btn btn-primary btn-lg" routerLink="/about" role="button">Acerca</a>
+            <a id="dark-button" class="btn btn-primary btn-lg" routerLink="/portfolio" role="button">Proyectos</a>
+          </p>
+        </div>
+
+    </div>
+  </div>
+</section>
+<!-- Jumbotron end -->
+
+<!-- Services start -->
+<app-services></app-services>
+<!-- Services end -->
+
+<!-- Projects start -->
+<app-projects></app-projects>
+<!-- Projects end -->
+
+<!-- About start -->
+<app-about></app-about>
+<!-- About end -->
+
+<!-- Contact start -->
+<app-contact></app-contact>
+<!-- Contact end -->
+
+  
+

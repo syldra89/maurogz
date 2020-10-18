@@ -1,0 +1,58 @@
+<div id="projects">
+
+	<!-- Inicio del Banner -->
+	<app-banner *ngIf="selectedLang == 'EN'" [page_title_en]="page_title_en"></app-banner>
+	<app-banner *ngIf="selectedLang == 'ES'" [page_title_es]="page_title_es"></app-banner>
+	<!-- Fin del Banner -->
+	<div class="container">
+		<div class="row">
+
+			<div class="col-md-6 col-lg-4">
+				<div class="portfolio-item mx-auto">
+					<a href="http://maurogz.com.ar/projects/blog-angular/" target="_blank">
+						<div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+							<div class="portfolio-item-caption-content">
+								<h3 class="text-center">Blog Angular</h3>
+								<span class="text-center">Angular / Laravel / MySQL</span>
+								
+							</div>
+						</div>
+					</a>
+					<img class="img-fluid" src="assets/img/projects/portfolio1.png">
+				</div>
+			</div>
+
+			<div class="col-md-6 col-lg-4">
+				<div class="portfolio-item mx-auto">
+					<a href="http://mgcontable.com.ar" target="_blank">
+						<div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+							<div class="portfolio-item-caption-content">
+								<h3 class="text-center">MG Estudio Contable</h3>
+								<span class="text-center">HTML5 / CSS3 / JS / PHP</span>
+								
+							</div>
+						</div>
+					</a>
+					<img class="img-fluid" src="assets/img/projects/portfolio2.png">
+				</div>
+			</div>
+
+			<div class="col-md-6 col-lg-4">
+				<div class="portfolio-item mx-auto">
+					<a href="http://maurogz.com.ar/projects/js-calculator/" target="_blank">
+						<div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+							<div class="portfolio-item-caption-content">
+								<h3 class="text-center">JS Calculator</h3>
+								<span class="text-center">HTML5 / CSS3 / JS</span>
+								
+							</div>
+						</div>
+					</a>
+					<img class="img-fluid" src="assets/img/projects/portfolio3.png">
+				</div>
+			</div>
+
+		</div>
+	</div>
+
+</div>

@@ -1,0 +1,151 @@
+<!--------------------->
+<!-- English Version -->
+<!--------------------->
+<div *ngIf="selectedLang == 'EN'" id="contact">
+	<!-- Inicio del Banner -->
+	<app-banner [page_title_en]="page_title_en"></app-banner>
+	<!-- Fin del Banner -->
+	
+	<div id="contact-content" class="container">
+
+		<div class="row">
+
+			<!-- Inicio Info de contacto -->
+			<div id="contact-info" class="col-lg-6 col-md-7 col-sm-6">
+				
+				<p>Have a question about my services? Please fill in the form.</p>
+				<br>
+				<div id="info" class="ml-2">
+					<p><i class="icon fa fa-phone mr-2"></i>011-6522-4836</p>
+					<p><i class="icon fa fa-envelope-o mr-2"></i>info@maurogz.com.ar</p>
+					
+				</div>
+			</div>
+			<!-- Fin Info de contacto -->
+
+			<!-- Inicio del Formulario de Contacto -->
+			<div id="contact-form" class="col-lg-6 col-md-5 col-sm-6 mt-1">
+
+				<form #contactForm="ngForm" (ngSubmit)="onSubmit(contactForm)">
+		
+					<div class="form-group">
+						
+						<input id="user-input" placeholder="Name *" type="text" name="name" class="form-control" #name="ngModel" required [(ngModel)]="contact.name">
+
+						<small *ngIf="!name.valid && name.touched" class="invalid-feedback d-block ml-2">
+							The field can't be empty.
+						</small>
+					</div>
+
+
+					<div class="form-group">
+						
+						<input id="user-input" placeholder="Email *" type="email" name="email" class="form-control" #email="ngModel" [(ngModel)]="contact.email" required>
+
+						<small *ngIf="!email.valid && email.touched" class="invalid-feedback d-block ml-2">
+							The field can't be empty.
+						</small>
+					</div>
+
+					<div class="form-group">
+						
+						<textarea id="text-area" rows="7" placeholder="Message *" type="text" name="message" class="form-control" #message="ngModel" [(ngModel)]="contact.message" required></textarea>
+
+						<small *ngIf="!message.valid && message.touched" class="invalid-feedback d-block ml-2">
+							The field can't be empty.
+						</small>
+					</div>
+
+					<input *ngIf=" sending != 'true' " type="submit" value="Send" class="btn btn-success" [disabled]="contactForm.invalid">
+					<input *ngIf=" status != 'success' && sending == 'true' " type="submit" value="Sending..." class="btn btn-success" [disabled]="contactForm.invalid">
+					<small *ngIf=" status == 'success' " class="valid-feedback d-block ml-2">
+							Your message was sent. Thanks!
+					</small>
+					<small *ngIf=" status == 'error' " class="invalid-feedback d-block ml-2">
+							Failed to send the message. Please try again.
+					</small>
+
+				</form>
+			</div>
+			<!-- Fin del Formulario de Contacto -->
+
+		</div>
+	</div>
+
+</div>
+<!------------------------------------------------------------------------------>
+<!--------------------->
+<!-- Spanish Version -->
+<!--------------------->
+<div *ngIf="selectedLang == 'ES'" id="contact">
+	<!-- Inicio del Banner -->
+	<app-banner [page_title_es]="page_title_es"></app-banner>
+	<!-- Fin del Banner -->
+	
+	<div id="contact-content" class="container">
+
+		<div class="row">
+
+			<!-- Inicio Info de contacto -->
+			<div id="contact-info" class="col-lg-6 col-md-7 col-sm-6">
+				
+				<p>¿Querés hacer alguna consulta? Completá el siguiente formulario.</p>
+				<br>
+				<div id="info" class="ml-2">
+					<p><i class="icon fa fa-phone mr-2"></i>011-6522-4836</p>
+					<p><i class="icon fa fa-envelope-o mr-2"></i>info@maurogz.com.ar</p>
+					
+				</div>
+			</div>
+			<!-- Fin Info de contacto -->
+
+			<!-- Inicio del Formulario de Contacto -->
+			<div id="contact-form" class="col-lg-6 col-md-5 col-sm-6 mt-1">
+
+				<form #contactForm="ngForm" (ngSubmit)="onSubmit(contactForm)">
+		
+					<div class="form-group">
+						
+						<input id="user-input" placeholder="Nombre *" type="text" name="name" class="form-control" #name="ngModel" required [(ngModel)]="contact.name">
+
+						<small *ngIf="!name.valid && name.touched" class="invalid-feedback d-block ml-2">
+							El campo no puede estar vacío.
+						</small>
+					</div>
+
+
+					<div class="form-group">
+						
+						<input id="user-input" placeholder="Email *" type="email" name="email" class="form-control" #email="ngModel" [(ngModel)]="contact.email" required>
+
+						<small *ngIf="!email.valid && email.touched" class="invalid-feedback d-block ml-2">
+							El campo no puede estar vacío.
+						</small>
+					</div>
+
+					<div class="form-group">
+						
+						<textarea id="text-area" rows="7" placeholder="Mensaje *" type="text" name="message" class="form-control" #message="ngModel" [(ngModel)]="contact.message" required></textarea>
+
+						<small *ngIf="!message.valid && message.touched" class="invalid-feedback d-block ml-2">
+							El campo no puede estar vacío.
+						</small>
+					</div>
+
+					<input *ngIf=" sending != 'true' " type="submit" value="Enviar" class="btn btn-success" [disabled]="contactForm.invalid">
+					<input *ngIf=" status != 'success' && sending == 'true' " type="submit" value="Enviando..." class="btn btn-success" [disabled]="contactForm.invalid">
+					<small *ngIf=" status == 'success' " class="valid-feedback d-block ml-2">
+							Tu mensaje fue enviado ¡Gracias!
+					</small>
+					<small *ngIf=" status == 'error' " class="invalid-feedback d-block ml-2">
+							Error al enviar el mensaje. Intente nuevamente.
+					</small>
+
+				</form>
+			</div>
+			<!-- Fin del Formulario de Contacto -->
+
+		</div>
+	</div>
+
+</div>
